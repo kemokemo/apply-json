@@ -79,6 +79,14 @@ func run() int {
 		})
 	}
 
+	/*
+		docS := doc.Find("#myDocURI")
+		if docS != nil {
+			uri, exists := docS.Attr("value")
+			log.Printf("uri: %v, exists: %v", uri, exists)
+		}
+	*/
+
 	err = html.Render(os.Stdout, doc.Nodes[0])
 	if err != nil {
 		fmt.Println("failed to render, ", err)

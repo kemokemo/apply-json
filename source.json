@@ -1,17 +1,17 @@
 {
   "DataArray": [
     {
-      "ID": "myChk1",
-      "Class": "myChk",
+      "ID": "box1-myCheck-1",
+      "Class": "myCheck",
       "Value": "true"
     },
     {
-      "ID": "myNote2",
+      "ID": "box1-myNote-4",
       "Class": "myNote",
       "Value": "test note"
     },
     {
-      "ID": "mySelect1",
+      "ID": "box2-mySelect-9",
       "Class": "mySelect",
       "Value": "orange"
     }
