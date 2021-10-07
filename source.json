@@ -1,0 +1,19 @@
+{
+  "DataArray": [
+    {
+      "ID": "myChk1",
+      "Class": "myChk",
+      "Value": "true"
+    },
+    {
+      "ID": "myNote2",
+      "Class": "myNote",
+      "Value": "test note"
+    },
+    {
+      "ID": "mySelect1",
+      "Class": "mySelect",
+      "Value": "orange"
+    }
+  ]
+}
