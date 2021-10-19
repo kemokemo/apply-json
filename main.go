@@ -63,8 +63,10 @@ func run() int {
 				switch t {
 				case "checkbox":
 					s.SetAttr("checked", d.Value)
-				case "text":
+				case "text", "number", "date":
 					s.SetAttr("value", d.Value)
+				default:
+					fmt.Printf("NotSupportType: %s\n", t)
 				}
 			case "select":
 				s.Find("option").Each(func(i int, cs *goquery.Selection) {
@@ -87,7 +89,19 @@ func run() int {
 		}
 	*/
 
-	err = html.Render(os.Stdout, doc.Nodes[0])
+	tf, err := os.Create("target.html")
+	if err != nil {
+		fmt.Println("failed to create file,", err)
+		return 1
+	}
+	defer func() {
+		e := tf.Close()
+		if e != nil {
+			fmt.Println("failed to close file, ", e)
+		}
+	}()
+
+	err = html.Render(tf, doc.Nodes[0])
 	if err != nil {
 		fmt.Println("failed to render, ", err)
 		return 1

@@ -14,6 +14,16 @@
       "ID": "box2-mySelect-9",
       "Class": "mySelect",
       "Value": "orange"
+    },
+    {
+      "ID": "box3-myNumber-9",
+      "Class": "myNumber",
+      "Value": "5"
+    },
+    {
+      "ID": "box3-myCalendar-10",
+      "Class": "myCalendar",
+      "Value": "2021-10-19"
     }
   ]
 }
